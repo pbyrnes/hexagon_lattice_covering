@@ -41,4 +41,5 @@ ax.set_ylim([0, overall_height/25.4])
 for idx in range(num_hexagons_wide):
     for jdx in range(num_hexagons_tall):
         hexagon_grid[idx][jdx].draw_hexagon(ax)
-plt.show()
+plt.axis('off')
+plt.savefig('pic.png', bbox_inches='tight', pad_inches=0)
