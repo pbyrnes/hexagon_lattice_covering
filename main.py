@@ -13,11 +13,6 @@ class Hexagon:
         self.coordinate_center_y = side_length * 3/2 * center_y
         self.side_length = side_length
 
-        # # convert from millimeters to inches for matplotlib
-        # self.coordinate_center_x /= 25.4
-        # self.coordinate_center_y /= 25.4
-        # self.side_length /= 25.4
-
     def draw_hexagon(self, axis):
         hexagon = RegularPolygon((self.coordinate_center_x, self.coordinate_center_y), numVertices=6, radius=self.side_length, edgecolor='Blue', fill=False)
         axis.add_patch(hexagon)
