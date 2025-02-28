@@ -28,8 +28,8 @@ triangle_side_length = 2.5  # in millimeters
 overall_width = 100  # 10 centimeters in millimeters
 overall_height = 100  # 10 centimeters in millimeters
 
-num_hexagons_wide = 2 + math.ceil(overall_width / (2 * math.sqrt(3)*triangle_side_length))
-num_hexagons_tall = 2 + math.ceil(overall_height / (2 * math.sqrt(3)*triangle_side_length))
+num_hexagons_wide = 3 + math.ceil(overall_width / (2 * math.sqrt(3)*triangle_side_length))
+num_hexagons_tall = 3 + math.ceil(overall_height / (2 * math.sqrt(3)*triangle_side_length))
 
 hexagon_grid = [[Hexagon(idx, jdx, 2*triangle_side_length) for jdx in range(num_hexagons_tall)] for idx in range(num_hexagons_wide)]
 
